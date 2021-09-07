@@ -97,6 +97,6 @@ class ClientTest extends TestCase
     public function testSetMotdepasse(): void
     {
         $this->client->setMotdepasse('*');
-        $this->assertEquals('*', $this->client->getMotdepasse());
+        $this->assertEquals('*8', $this->client->getMotdepasse());
     }
 }
