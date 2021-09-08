@@ -16,7 +16,7 @@ class ClientServiceTest extends TestCase
     private $clientService;
     
     /**
-     * @var EntityManaherInterface
+     * @var EntityManagerInterface
      */
     private $entityManager;
     
@@ -78,7 +78,7 @@ class ClientServiceTest extends TestCase
         $this->clientService->ajouterClient($client);
     }
     
-    public function testModifierClient(): void
+    /*public function testModifierClient(): void
     {
         // On crée l'objet nécessaire au test
         $client = new Client();
@@ -94,7 +94,7 @@ class ClientServiceTest extends TestCase
         
         // On exécute la méthode à tester, son exécution doit dérouler le scénario décrit
         $this->clientService->modifierClient($client);
-    }
+    }*/
     
     public function testSupprimerClient(): void
     {
